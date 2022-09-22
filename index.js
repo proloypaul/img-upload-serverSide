@@ -1,6 +1,7 @@
 const express = require('express');
+require('dotenv').config();
 const app = express();
-const port = 3600;
+const port = process.env.PORT;
 
 app.get('/', (req, res) => {
     res.send("image upload server running");
